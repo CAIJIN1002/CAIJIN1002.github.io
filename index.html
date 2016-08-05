@@ -4,9 +4,205 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>BMI 計算機</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <!--  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!--  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!--  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script >
+    $(function() {
+
+
+      $('#calc2').click(function(){
+
+        var sex = $('input:radio:checked[name="options"]').val();
+        var bmi2 = $('#result2').val();
+        //alert(bmi2);
+        var ages = $('#ages').val();
+        //alert(ages);
+
+        //alert(sex);
+        if (bmi2!=""){
+          if(ages !=""){
+            if( sex == "男"){
+              var boy = (bmi2*1.2) + (ages * 0.23) - 5.4 - ( 1 * 10.8 );
+              $('#fat').val(formatFloat(boy, 3));
+
+            }
+            else if(sex == "女"){
+              var girl = (bmi2*1.2) + (ages * 0.23) - 5.4 - ( 0 * 10.8 );
+              $('#fat').val(formatFloat(girl, 3));
+            }
+          }
+          else {
+            alert('請先輸入年齡');
+          }
+
+        }
+        else {
+          alert('請先計算bmi值');
+        }
+
+
+
+      });
+
+      $('#calc').click(function(){
+        var h = $('#height').val();
+        var w = $('#weight').val();
+        if ( h == '' ){
+          alert('請輸入身高');
+        }
+        else if( w == ''){
+          alert('請輸入體重');
+        }
+        else if(h>3){
+          alert('身高請輸入公尺');
+        }
+        else{
+          var bmi = w / ( h * h );
+          //alert(bmi);
+          $('#result').val(formatFloat(bmi, 3));
+          var h = $('#height').val("");
+          var h = $('#height').val("");
+          $('#result2').val($('#result').val());
+        }
+      });
+    });
+
+    function formatFloat(num, pos){
+      var size = Math.pow(10, pos);
+      return Math.round(num * size) / size;
+    }
+  </script>
+
 </head>
 <body>
- <h1>123</h1>
+  <div class="container-fluid mycontainer">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">BMI計算機</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://hahow.in" target="_bland">About</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="row">
+      <div class="col-md-4 box">
+        <div class="form-group">
+          <label for="height">請輸入身高(M)</label>
+          <input type="number" class="form-control" id="height" placeholder="身高">
+        </div>
+      </div>
+
+      <div class="col-md-4 box">
+        <div class="form-group">
+          <label for="weight">請輸入體重(KG)</label>
+          <input type="number" class="form-control" id="weight" placeholder="體重">
+        </div>
+      </div>
+
+      <div class="col-md-1 button-box">
+        <div class="form-group">
+          <button type="button" id="calc" class="btn btn-default">計算</button>
+        </div>
+      </div>
+
+      <div class="col-md-3 box">
+        <div class="form-group">
+          <label for="result">你的BMI</label>
+          <input type="number" class="form-control" id="result" readonly="true">
+        </div>
+      </div>
+    </div>
+
+    <!--體脂肪區塊-->
+    <div class="row">
+      <!--BMI-->
+      <div class="col-md-4 box">
+        <div class="form-group">
+          <label for="result2">你的BMI</label>
+          <input type="number" class="form-control" id="result2" readonly="true">
+        </div>
+      </div>
+
+      <!--年齡-->
+      <div class="col-md-2 box">
+        <div class="form-group">
+          <label for="ages">年齡</label>
+          <input type="number" class="form-control" id="ages" placeholder="年齡">
+        </div>
+      </div>
+
+      <!--性別-->
+      <div class="col-md-2 button-box">
+        <div class="form-group">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" value="男" checked>男
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option2" autocomplete="off" value="女">女
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!--計算按鈕-->
+      <div class="col-md-1 button-box">
+        <div class="form-group">
+          <button type="button" id="calc2" class="btn btn-default">計算</button>
+        </div>
+      </div>
+
+      <!--體脂肪率-->
+      <div class="col-md-3 box">
+        <div class="form-group">
+          <label for="fat">體脂肪率</label>
+          <input type="number" class="form-control" id="fat" readonly="true">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
 </body>
 </html>
