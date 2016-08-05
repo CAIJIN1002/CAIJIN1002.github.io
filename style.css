@@ -1,0 +1,84 @@
+.mycontainer{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box{
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:20px;
+}
+.button-box{
+
+  padding-top: 44.5px;
+  padding-right: 30px;
+
+
+}
+@media screen and (max-width: 480px){
+
+  .mycontainer{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+  }
+
+  .button-box{
+
+    padding-top: 44.5px;
+
+    padding-left: 40%;
+
+  }
+}
+@media screen and (max-width: 768px){
+
+  .mycontainer{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+  }
+
+  .button-box{
+
+    padding-top: 44.5px;
+
+    padding-left: 40%;
+
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 998px){
+
+  .mycontainer{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box{
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:10px;
+  }
+
+  .button-box{
+
+    padding-top: 44.5px;
+
+    padding-left: 40px;
+
+  }
+}
