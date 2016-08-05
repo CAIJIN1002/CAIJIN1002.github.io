@@ -96,6 +96,7 @@
 </head>
 <body>
   <div class="container-fluid mycontainer">
+    <!--navbar-->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -122,86 +123,94 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
+    <!--BMI計算-->
     <div class="row">
-      <div class="col-md-4 box">
-        <div class="form-group">
-          <label for="height">請輸入身高(M)</label>
-          <input type="number" class="form-control" id="height" placeholder="身高">
-        </div>
-      </div>
+      <div class="panel panel-primary ">
+        <div class="panel-heading">BMI計算</div>
+          <div class="panel-body">
+            <div class="col-md-4 box">
+              <div class="form-group">
+                <label for="height">請輸入身高(M)</label>
+                <input type="number" class="form-control" id="height" placeholder="身高">
+              </div>
+            </div>
 
-      <div class="col-md-4 box">
-        <div class="form-group">
-          <label for="weight">請輸入體重(KG)</label>
-          <input type="number" class="form-control" id="weight" placeholder="體重">
-        </div>
-      </div>
+            <div class="col-md-4 box">
+              <div class="form-group">
+                <label for="weight">請輸入體重(KG)</label>
+                <input type="number" class="form-control" id="weight" placeholder="體重">
+              </div>
+            </div>
 
-      <div class="col-md-1 button-box">
-        <div class="form-group">
-          <button type="button" id="calc" class="btn btn-default">計算</button>
-        </div>
-      </div>
+            <div class="col-md-1 button-box">
+              <div class="form-group">
+                <button type="button" id="calc" class="btn btn-default">計算</button>
+              </div>
+            </div>
 
-      <div class="col-md-3 box">
-        <div class="form-group">
-          <label for="result">你的BMI</label>
-          <input type="number" class="form-control" id="result" readonly="true">
-        </div>
-      </div>
-    </div>
-
-    <!--體脂肪區塊-->
-    <div class="row">
-      <!--BMI-->
-      <div class="col-md-4 box">
-        <div class="form-group">
-          <label for="result2">你的BMI</label>
-          <input type="number" class="form-control" id="result2" readonly="true">
-        </div>
-      </div>
-
-      <!--年齡-->
-      <div class="col-md-2 box">
-        <div class="form-group">
-          <label for="ages">年齡</label>
-          <input type="number" class="form-control" id="ages" placeholder="年齡">
-        </div>
-      </div>
-
-      <!--性別-->
-      <div class="col-md-2 button-box">
-        <div class="form-group">
-          <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-primary active">
-              <input type="radio" name="options" id="option1" autocomplete="off" value="男" checked>男
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="option2" autocomplete="off" value="女">女
-            </label>
+            <div class="col-md-3 box">
+              <div class="form-group">
+                <label for="result">你的BMI</label>
+                <input type="number" class="form-control" id="result" readonly="true">
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <!--體脂肪計算-->
+    <div class="row">
+      <div class="panel panel-success">
+        <div class="panel-heading">體脂肪計算</div>
+        <div class="panel-body">
+          <!--BMI-->
+          <div class="col-md-4 box">
+            <div class="form-group">
+              <label for="result2">你的BMI</label>
+              <input type="number" class="form-control" id="result2" readonly="true">
+            </div>
+          </div>
 
-      <!--計算按鈕-->
-      <div class="col-md-1 button-box">
-        <div class="form-group">
-          <button type="button" id="calc2" class="btn btn-default">計算</button>
-        </div>
-      </div>
+          <!--年齡-->
+          <div class="col-md-2 box">
+            <div class="form-group">
+              <label for="ages">年齡</label>
+              <input type="number" class="form-control" id="ages" placeholder="年齡">
+            </div>
+          </div>
 
-      <!--體脂肪率-->
-      <div class="col-md-3 box">
-        <div class="form-group">
-          <label for="fat">體脂肪率</label>
-          <input type="number" class="form-control" id="fat" readonly="true">
+          <!--性別-->
+          <div class="col-md-2 button-box">
+            <div class="form-group">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" value="男" checked>男
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2" autocomplete="off" value="女">女
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!--計算按鈕-->
+          <div class="col-md-1 button-box">
+            <div class="form-group">
+              <button type="button" id="calc2" class="btn btn-default">計算</button>
+            </div>
+          </div>
+
+          <!--體脂肪率-->
+          <div class="col-md-3 box">
+            <div class="form-group">
+              <label for="fat">體脂肪率</label>
+              <input type="number" class="form-control" id="fat" readonly="true">
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-
-  </div>
-
 
 
 </body>
