@@ -13,8 +13,11 @@
 
   padding-top: 44.5px;
   padding-right: 30px;
-
-
+}
+.panel{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 480px){
 
@@ -54,9 +57,9 @@
 
   .button-box{
 
-    padding-top: 44.5px;
+    padding-top: 10px;
 
-    padding-left: 40%;
+    padding-left: 40px;
 
   }
 }
@@ -76,7 +79,7 @@
 
   .button-box{
 
-    padding-top: 44.5px;
+    padding-top: 10px;
 
     padding-left: 40px;
 
