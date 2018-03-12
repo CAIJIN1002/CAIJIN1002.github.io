@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+* {
+  font-family: "微軟正黑體";
+  position: relative;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+
+.letter {
+  max-width: 900px;
+  height: 450px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  box-shadow: 8px 8px 8px grey;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.letter:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.letter-des, .letter-form {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+}
+
+.letter-des {
+  padding: 28px;
+  color: #fff;
+  background: url("https://zaizai.tw/images/wood-2628286_1920.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.letter-des:before {
+  content: "";
+  display: block;
+  background: -webkit-linear-gradient(45deg, #9f2bff, #44beea);
+  background: linear-gradient(45deg, #9f2bff, #44beea);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.des_title {
+  font-weight: normal;
+}
+
+.des_des {
+  margin-bottom: 28px;
+}
+
+.des_link {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.des_link:hover {
+  overflow: hidden;
+}
+.des_link:hover:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  background-color: #44beea;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: circle 1s;
+          animation: circle 1s;
+  border: 0;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.des_link:active {
+  color: #fff;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 5px;
+    height: 5px;
+    background-color: #44beea;
+    opacity: 0.5;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    background-color: #9f2bff;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: 5px;
+    height: 5px;
+    background-color: #44beea;
+    opacity: 0.5;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    background-color: #9f2bff;
+    opacity: 0;
+  }
+}
+.letter-form {
+  width: 40%;
+  padding: 28px;
+  text-align: center;
+  background-color: #fff;
+  vertical-align: center;
+}
+
+.form_container {
+  text-align: left;
+}
+
+.form_label {
+  margin: 0;
+  text-align: left;
+  top: 25px;
+  left: 10px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 16px;
+  color: grey;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.is-active {
+  top: -8px;
+  left: 0;
+  color: #44beea;
+  font-size: 12px;
+}
+
+.form_msg.is-focus {
+  border: 1px solid #44beea;
+}
+
+.form_msg, .form_textarea {
+  border-radius: 4px;
+  padding: 8px;
+  outline: 0;
+  border: 1px grey solid;
+}
+
+.form_msg {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.form_textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.form_btn {
+  padding: 12px 24px;
+  outline: 0;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(45deg, #9f2bff, #44beea);
+  background: linear-gradient(45deg, #9f2bff, #44beea);
+  cursor: pointer;
+  border: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form_btn:hover {
+  box-shadow: 0px 4px 5px grey;
+}
+
+#card {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#card .close {
+  right: 16px;
+  top: 16px;
+  color: #000;
+  position: absolute;
+  z-index: 999;
+  text-decoration: none;
+}
+#card .close:before {
+  content: "Close";
+  display: block;
+  white-space: nowrap;
+}
+#card:target {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  background-color: #44beea;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .letter {
+    margin: 16px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 667px) {
+  .letter {
+    overflow: visible;
+    vertical-align: top;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 430px;
+  }
+
+  .letter-des, .letter-form {
+    float: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .letter-form {
+    box-shadow: 8px 8px 8px grey;
+  }
+}
