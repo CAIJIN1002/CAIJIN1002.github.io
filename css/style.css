@@ -814,7 +814,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #000;
+  background-color: #373946;
 }
 .img-box:nth-child(n):hover .inner_info {
   opacity: 1;
