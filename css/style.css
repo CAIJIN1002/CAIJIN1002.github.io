@@ -182,7 +182,7 @@ section#welcome .welcome_inner .btn.download_cv, section#welcome .welcome_inner 
 section#welcome .welcome_inner .btn.download_cv {
   background-color: #f9cb44;
   border: 3px solid #f9cb44;
-  color: #ececee;
+  color: #333;
   padding: 8px 15px;
   margin-right: 16px;
 }
