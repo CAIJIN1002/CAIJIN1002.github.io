@@ -1,6 +1,6 @@
 $(document).ready(
     function(){
-        console.clear();
+        // console.clear();
         // new WOW().init();
         $('.contact_form').submit(function(event){
             event.preventDefault();

@@ -20,7 +20,7 @@ body {
 #header_index {
   padding-top: 35vh;
   padding-bottom: 35vh;
-  background-image: url("/images/CV.jpg");
+  background-image: url("../images/CV.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -234,12 +234,12 @@ body {
   z-index: 9;
 }
 #experience:before {
-  background-image: url("/images/資產 2.png");
+  background-image: url("../images/資產 2.png");
   top: -3px;
   left: 0;
 }
 #experience:after {
-  background-image: url("/images/資產 4.png");
+  background-image: url("../images/資產 4.png");
   bottom: 0px;
   left: 0;
 }
@@ -376,7 +376,7 @@ body {
   z-index: 9;
 }
 #profolio:after {
-  background-image: url("/images/資產 5.png");
+  background-image: url("../images/資產 5.png");
   bottom: -100px;
   left: 0;
 }
@@ -477,7 +477,7 @@ body {
   z-index: 9;
 }
 #skills:after {
-  background-image: url("/images/資產 6.png");
+  background-image: url("../images/資產 6.png");
   bottom: 0px;
   left: 0;
 }
@@ -722,7 +722,7 @@ body {
   color: #dd4f3c;
 }
 
-@media (max=width: 768px){
+@media (max-width: 768px){
   .menu #overlay ul.menu.nav__menu li a.menu__item {
     font-size: 40px;
 
