@@ -757,7 +757,12 @@ body {
   background-color: #dd4f3c;
   position: absolute;
 }
+@media (max-width: 768px) {
 
+  .menu #overlay ul.menu.nav__menu li a.menu__item {
+    font-size: 40px;
+  }
+}
 @media (max-width: 375px) {
   .menu {
     font-size: 16px;
@@ -769,7 +774,6 @@ body {
     margin-bottom: 8px;
   }
   .menu #overlay ul.menu.nav__menu li a.menu__item {
-    font-size: 30px;
     font-weight: bold;
   }
 }
