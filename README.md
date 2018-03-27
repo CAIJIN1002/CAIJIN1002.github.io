@@ -20,6 +20,8 @@
 * 使用 Vue.js 框架建構輕量型快速響應的介面
 * SPA 網頁編程
 * Vue.js 相關技術： Vuex、vue-router、Vuex
+* Vue-cli 架設 webpack 工作環境
+* 使用 Vue-router、Vuex 等技術
 #### Git/GitHub
 * 能使用 Git 在 GitHub 上進行版本控制
 * Github Page: [個人網站](https://caijin1002.github.io)
@@ -32,15 +34,10 @@
 #### Angular.js 作品
 * [To-do list ](https://codepen.io/CAIJIN/pen/XVpLJZ)
 
-
 #### Vue.js 作品
 * [To do list](https://codepen.io/CAIJIN/pen/XVByNM)
 * [密碼強度檢測](https://codepen.io/CAIJIN/pen/dmPbyX?editors=1010)
 * [鋼琴](https://codepen.io/CAIJIN/pen/NpyGrR)
-* Vue-cli 架設 webpack 工作環境
-* SPA 架構
-* 使用 Vue-router、Vuex 等技術
-
 
 #### [臺北市災害災情資料網](https://codepen.io/CAIJIN/pen/JLbvZY)
 
