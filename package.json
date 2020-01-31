@@ -2,6 +2,7 @@
   "name": "profile",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://caijin1002.github.io/",
   "jest": {
     "collectCoverageFrom": [
       "**/*.{js,jsx,ts,tsx}",
@@ -27,7 +28,8 @@
     "lint:prettier": "prettier \"**/*.{jsx,js}\"",
     "lint": "concurrently \"npm run lint:prettier\" \"npm run lint:css\" \"npm run lint:js\"",
     "storybook": "start-storybook",
-    "publish": "node ./publish.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
