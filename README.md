@@ -1,6 +1,6 @@
 # 翁才晉 (CAI-JIN WENG)
-* English Name: Caijin Weng
-* Location : 新北市中和區
+* English Name: John Weng
+* Location : 新北市三重區
 * Personal website : https://caijin1002.github.io
 * E-mail : caijin.weng1002@gmail.com
 ## Experience
@@ -8,15 +8,20 @@
 * 參與公司網頁專案多人開發
 * 使用 ASP.NET 進行開發
 * SVN 版本控制
-
+#### 名留集團 - 前端工程師(2018/5 - 目前)
+名留集團是一間台灣最大規模的連鎖美髮集團, 在這裡我負責從 0 到 1 打造內部系統,  經常與設計師或產品負責人針對介面、流程討論及溝通, 並在快速迭代的環境中維持良好的程式碼品質。
+主要負責「內部系統」「POS 系統」「店務系統」
+1. 0 到 1 建構產品, 架構規劃、撰寫自動化腳本、 實施自動化部屬
+2. 與設計師或產品負責人針對介面及流程討論
+3. 持續學習並將經驗傳承給後進人員
 ## Skills
 #### HTML(pug) /CSS(sass) /RWD /Bootstrap /JavaScript(ES6) /jQuery /AJAX
-* HTML 建立網頁架構、CSS 修飾網頁、會徒手刻 RWD (也懂 Bootstrap) 
+* HTML 建立網頁架構、CSS 修飾網頁、會徒手刻 RWD (也懂 Bootstrap)
 * 撰寫 JavaScript，熟悉 ES6 語法
 * 熟悉 jQuery 語法
 * 熟悉AJAX 資料 POST、GET 用法
 * 熟悉並使用使用前預處理語言pug、sass加速開發
-#### Frontend Framework: Vue.js
+#### Frontend Framework: Vue.js/React.js
 * 使用 Vue.js 框架建構輕量型快速響應的介面
 * SPA 網頁編程
 * Vue.js 相關技術： Vuex、vue-router、Vuex
