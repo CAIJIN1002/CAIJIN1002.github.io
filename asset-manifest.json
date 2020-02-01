@@ -2,16 +2,16 @@
   "files": {
     "main.js": "/static/js/main.d222f019.chunk.js",
     "main.js.map": "/static/js/main.d222f019.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ae0e0381.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ae0e0381.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2fcaf06d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2fcaf06d.js.map",
     "static/js/2.d919e4f3.chunk.js": "/static/js/2.d919e4f3.chunk.js",
     "static/js/2.d919e4f3.chunk.js.map": "/static/js/2.d919e4f3.chunk.js.map",
-    "static/js/3.4ce5a1fa.chunk.js": "/static/js/3.4ce5a1fa.chunk.js",
-    "static/js/3.4ce5a1fa.chunk.js.map": "/static/js/3.4ce5a1fa.chunk.js.map",
-    "static/js/4.db2ffef3.chunk.js": "/static/js/4.db2ffef3.chunk.js",
-    "static/js/4.db2ffef3.chunk.js.map": "/static/js/4.db2ffef3.chunk.js.map",
+    "static/js/3.a423ce55.chunk.js": "/static/js/3.a423ce55.chunk.js",
+    "static/js/3.a423ce55.chunk.js.map": "/static/js/3.a423ce55.chunk.js.map",
+    "static/js/4.17be886a.chunk.js": "/static/js/4.17be886a.chunk.js",
+    "static/js/4.17be886a.chunk.js.map": "/static/js/4.17be886a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.12362e4f8acdcfe403006c88fb09ddb6.js": "/precache-manifest.12362e4f8acdcfe403006c88fb09ddb6.js",
+    "precache-manifest.7d94bd41bbac56693cec7061490ffd0d.js": "/precache-manifest.7d94bd41bbac56693cec7061490ffd0d.js",
     "service-worker.js": "/service-worker.js",
     "static/media/JeanCarePOS.png": "/static/media/JeanCarePOS.d691f9f6.png",
     "static/media/LineCoupon.png": "/static/media/LineCoupon.45c73ecb.png",
@@ -23,7 +23,7 @@
     "static/media/mail.svg": "/static/media/mail.d7b64e14.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae0e0381.js",
+    "static/js/runtime-main.2fcaf06d.js",
     "static/js/2.d919e4f3.chunk.js",
     "static/js/main.d222f019.chunk.js"
   ]
