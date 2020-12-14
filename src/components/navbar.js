@@ -69,6 +69,7 @@ const StyledTransitionAnimation = styled.div`
 
 export default function Navbar() {
   const location = useLocation()
+  const [loading, setLoading] = useState(false)
   const history = useHistory()
   const hangleRouter = ({ href }) => {
     setLoading(true)
@@ -86,7 +87,7 @@ export default function Navbar() {
       setLoading(false)
     }, 500)
   }
-  const [loading, setLoading] = useState(false)
+
   const unsubscribeFromHistory = history.listen(handleLocationChange)
   return (
     <Fragment>
@@ -95,13 +96,17 @@ export default function Navbar() {
           <NavbarItem
             active={nav.href === location.pathname}
             key={`navItem-${idx}`}
-            onClick={() => hangleRouter({ href: nav.href })}
+            onClick={() => {
+              if (nav.href !== location.pathname) {
+                hangleRouter({ href: nav.href })
+              }
+            }}
           >
             {nav.title}
           </NavbarItem>
         ))}
       </StyledNavbar>
-      {loading ? <StyledTransitionAnimation active={loading} /> : ''}
+      {loading && <StyledTransitionAnimation active={loading} />}
     </Fragment>
   )
 }

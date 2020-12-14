@@ -60,7 +60,11 @@ export const StyledIcon = styled.li`
   height: 40px;
   margin-right: 3rem;
   color: ${theme.white};
-  & > img {
+  & > a {
+    width: 100%;
+    height: 100%;
+  }
+  & > a > img {
     display: flex;
     width: 100%;
     height: 100%;

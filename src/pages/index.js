@@ -22,18 +22,23 @@ export default function HomePage() {
         async
         {` {`}
         <h3>
-          我有 2 年以上的網頁前端開發經驗，參與過 6 個 以上的專案開發，熟悉R
-          eact、Vue，熱愛學習新技術與分享，享受在技術變化萬千的世界當中，對不同領域帶有學習熱枕，樂於學習接收新鮮事物。
+          我有豐富的開發網站經驗，能夠獨立作業確認需求流程，溝通協調與不同部門溝通。
+          參與多個大型系統開發，串接過不同金、物流及第三方API，熟悉 React、Redux、Jest、Graphql
+          等技術。
         </h3>
         {`}`}
       </StyledSubTitle>
       <StyledFooter>
         <StyledIcons>
           <StyledIcon>
-            <img src={GithubIcon} alt="" />
+            <a href="https://github.com/CAIJIN1002" rel="noopener noreferrer" target="_blank">
+              <img src={GithubIcon} alt="github" />
+            </a>
           </StyledIcon>
           <StyledIcon>
-            <img src={MaillIcon} alt="" />
+            <a href="mailto:caijin.weng1002@gmail.com" rel="noopener noreferrer" target="_blank">
+              <img src={MaillIcon} alt="mail" />
+            </a>
           </StyledIcon>
         </StyledIcons>
       </StyledFooter>
