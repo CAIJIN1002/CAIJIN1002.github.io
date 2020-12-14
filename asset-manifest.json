@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.js": "/static/js/main.d222f019.chunk.js",
-    "main.js.map": "/static/js/main.d222f019.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2fcaf06d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2fcaf06d.js.map",
-    "static/js/2.d919e4f3.chunk.js": "/static/js/2.d919e4f3.chunk.js",
-    "static/js/2.d919e4f3.chunk.js.map": "/static/js/2.d919e4f3.chunk.js.map",
-    "static/js/3.a423ce55.chunk.js": "/static/js/3.a423ce55.chunk.js",
-    "static/js/3.a423ce55.chunk.js.map": "/static/js/3.a423ce55.chunk.js.map",
-    "static/js/4.17be886a.chunk.js": "/static/js/4.17be886a.chunk.js",
-    "static/js/4.17be886a.chunk.js.map": "/static/js/4.17be886a.chunk.js.map",
+    "main.js": "/static/js/main.6e374a1c.chunk.js",
+    "main.js.map": "/static/js/main.6e374a1c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5bac52b3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5bac52b3.js.map",
+    "static/js/2.b18bf586.chunk.js": "/static/js/2.b18bf586.chunk.js",
+    "static/js/2.b18bf586.chunk.js.map": "/static/js/2.b18bf586.chunk.js.map",
+    "static/js/3.923ffd5d.chunk.js": "/static/js/3.923ffd5d.chunk.js",
+    "static/js/3.923ffd5d.chunk.js.map": "/static/js/3.923ffd5d.chunk.js.map",
+    "static/js/4.8c17d38c.chunk.js": "/static/js/4.8c17d38c.chunk.js",
+    "static/js/4.8c17d38c.chunk.js.map": "/static/js/4.8c17d38c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7d94bd41bbac56693cec7061490ffd0d.js": "/precache-manifest.7d94bd41bbac56693cec7061490ffd0d.js",
+    "precache-manifest.bf32cdb0eded0b300775e86d5f86f249.js": "/precache-manifest.bf32cdb0eded0b300775e86d5f86f249.js",
     "service-worker.js": "/service-worker.js",
+    "static/media/BeautyOS.png": "/static/media/BeautyOS.6e464117.png",
     "static/media/JeanCarePOS.png": "/static/media/JeanCarePOS.d691f9f6.png",
-    "static/media/LineCoupon.png": "/static/media/LineCoupon.45c73ecb.png",
+    "static/media/LINE@.jpeg": "/static/media/LINE@.fdb26945.jpeg",
     "static/media/MLGCtrl.jpg": "/static/media/MLGCtrl.10aba433.jpg",
     "static/media/MLGOffcialWebsite.png": "/static/media/MLGOffcialWebsite.5a36ee1b.png",
-    "static/media/MLGVIPLogin.png": "/static/media/MLGVIPLogin.3b225620.png",
     "static/media/Melegant.png": "/static/media/Melegant.0914f13d.png",
+    "static/media/coupon.png": "/static/media/coupon.1162a0f3.png",
     "static/media/github.svg": "/static/media/github.364b6f4a.svg",
-    "static/media/mail.svg": "/static/media/mail.d7b64e14.svg"
+    "static/media/mail.svg": "/static/media/mail.d7b64e14.svg",
+    "static/media/vip.png": "/static/media/vip.e36860e3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2fcaf06d.js",
-    "static/js/2.d919e4f3.chunk.js",
-    "static/js/main.d222f019.chunk.js"
+    "static/js/runtime-main.5bac52b3.js",
+    "static/js/2.b18bf586.chunk.js",
+    "static/js/main.6e374a1c.chunk.js"
   ]
 }
