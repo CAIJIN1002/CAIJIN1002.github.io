@@ -28,7 +28,7 @@
     "lint:prettier": "prettier \"**/*.{jsx,js}\"",
     "lint": "concurrently \"yarn lint:prettier\" \"yarn lint:css\" \"yarn lint:js\"",
     "storybook": "start-storybook",
-    "deploy": "concurrently \"yarn build\" \"gh-pages -b master -d build\""
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

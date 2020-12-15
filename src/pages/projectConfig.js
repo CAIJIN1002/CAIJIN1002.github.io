@@ -6,6 +6,9 @@ import VIP from 'assets/previews/vip.png'
 import BeautyOS from 'assets/previews/BeautyOS.png'
 import Coupon from 'assets/previews/coupon.png'
 import LINEAT from 'assets/previews/LINE@.jpeg'
+
+import Slot from 'assets/previews/Slot.png'
+
 export default [
   {
     image: BeautyOS,
@@ -41,6 +44,12 @@ export default [
     link: '',
     discription:
       '此系統目的將以往線下的行銷活動帶到線上，與內部系統連結管理，並配合每年公司大型活動，現已線上化 90%, 同期業績提升 25% 。'
+  },
+  {
+    image: Slot,
+    title: '年終抽獎拉霸機',
+    link: '',
+    discription: '年終抽獎是名留集團一年一度的年度盛事，透過拉霸機可以抽出年終百萬大獎的夢幻得主。'
   },
   {
     image: Melegant,
